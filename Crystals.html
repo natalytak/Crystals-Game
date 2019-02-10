@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seashells game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./crystals.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="rules" class="row">
+            <div class="col-md-12">
+                <h1>Seashells Collector!</h1>
+                <p>
+                    <h3>Rules of the game:</h3>
+                </p>
+                <p>
+                    <ul>
+                        <li>You will given a random number at the start of the game.</li>
+                        <li>There are four seashells below. By clicking on a seashell you will add a specific amount of
+                            points to your total score.</li>
+                        <li>You win the game by matching your total score to random number, you lose the game if your
+                            total score goes above the random number.</li>
+                        <li>The value of each seashell is hidden from you until you click on it.</li>
+                        <li>Each time when the game starts, the game will change the values of each seashell.</li>
+                    </ul>
+                    <h4>Good luck!</h4>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div id="random" class="col-md-4">
+                <p>The random number is: <br><span id="random-number"></span></p>
+            </div>
+            <div class="col-md-2"></div>
+            <div id="score" class="col-md-4">
+                <p>Your score so far: <br><span id="your-score"></span></p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div id="images" class="col-md-12">
+                <img id="image1" src="images/shells1.png" alt="shells1">
+                <img id="image2" src="images/shells5.png" alt="shells5">
+                <img id="image3" src="images/shells4.png" alt="shells4">
+                <img id="image4" src="images/shells3.png" alt="shells3">
+            </div>
+        </div>
+
+        <div id="wins-losses" class="row">
+            <div class="col-md-1"></div>
+            <div id="winDiv" class="col-md-4">
+                <p>Wins: <br><span id="wins"></span></p>
+            </div>
+            <div class="col-md-2"><span id="message"></span></div>
+            <div id="lossDiv" class="col-md-4">
+                <p>Losses: <br><span id="losses"></span></p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="crystals.js"></script>
+</body>
+
+</html>
